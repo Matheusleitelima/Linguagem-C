@@ -1,0 +1,44 @@
+/* Iniciando nossa jornada em C!*/
+#include <stdio.h>
+//Biblioteca da lingua C
+#include <stdlib.h>
+//Biblioteca da lingua C
+//Esses arquivos possui informaçoes
+//usados pelo compilador funçoes
+//de entrada e saida de dadsos
+
+void main()
+//Função principal, void não retorna nenhum valor
+{
+    printf("Hello world!\n");
+    //comando para aparecer na tela do usuario
+
+    int num1, num2, soma ;
+    //variaveis do tipo int "inteiro"
+
+    printf("Digite o primeiro numero: ");
+    //imprimir na tela a perguntar para o usuario
+
+    scanf("%d", &num1);
+    //comando de leitura, %d tipo de variavel, &num1 a varivael que pertence
+
+    printf("Digite o segundo numero: ");
+    //imprimir na tela a perguntar para o usuario
+
+    scanf("%d", &num2);
+     //comando de leitura, %d tipo de variavel, &num2 a varivael que pertence
+
+    soma= num1 + num2 ;
+    //variavel soma é igual a num1 + num 2
+
+    printf("soma: %d" ,soma);
+    //imprimir a variavel soma, %d tipo de variavel, e ,soma que é a variavel pertencente
+
+
+
+
+
+
+
+    return 0;
+}
