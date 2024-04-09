@@ -1,0 +1,24 @@
+int main()
+{
+
+    printf("tamanho de armeznamento para tipo int: %d \n", sizeof(int));
+    printf("tamanho de armeznamento para tipo short: %d \n", sizeof(short));
+    printf("tamanho de armeznamento para tipo long: %d \n", sizeof(long));
+
+
+
+     printf("tamanho de armeznamento para tipo float: %d \n", sizeof(float));
+     printf("tamanho de armeznamento para tipo double: %d \n", sizeof(double));
+     printf("tamanho de armeznamento para tipo long double: %d \n", sizeof(long double));
+
+     //tipo logico (true e false) chamado de bool, true=1 e false=0
+     // usar biblioteca stdbool.h
+
+     typedef enum {false=0, true=1}logico;
+
+    //tipo caracetere (char)
+
+      return 0;
+
+
+}
