@@ -1,0 +1,16 @@
+  int idade;
+    //variavel inteiro + nome da variavel
+    float salario, valor;
+    //variavel tipo float + nome das duas variaveis
+    idade= 25;
+    //atribuindo valor a bariavel idade
+
+    valor=4500.50;
+    //atribuindo valor a variavel valor
+    salario= valor;
+    //salario é igual a variavel valor
+
+    printf("a idade e %d\n", idade);
+    //imprimir a variavel idade
+    printf("o salario e %f\n", salario);
+    //imprimir a variavel salario
