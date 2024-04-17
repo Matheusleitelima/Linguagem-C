@@ -1,26 +1,44 @@
 #include <iostream>
+//biblioteca do c++
 #include <math.h>
+//biblioteca do c++
 using namespace std;
+//Comando para tirar o std do codigo
 
 int main()
 {
     cout << "Hello world!" << endl;
+    //cout é o print, função que vai aparecer para o usuario, end é o fim da linha.
+
     float cateto1;
+    //variavel float
     float cateto2;
+    //variavel float
     float hipotenusa;
+    //variavel float
     float soma;
+    //variavel float
 
     cout<<"digite o primeiro cateto\n"<< endl;
+    //cout imprimi a pergunta para o usuario
     cin>>cateto1;
+    //cin ler a resposta e armazenar na variavel cateto1
 
     cout<<"digite o segundo cateto\n"<< endl;
+    //cout imprimi a pergunta para o usuario
     cin>>cateto2;
+    //cin ler a resposta e armazenar na variavel cateto2
 
     soma= pow(cateto1, 2) + pow(cateto2, 2);
+    //declarando que a variavel soma é igual a base do cateto1 elevado a 2 mais a base do cateto2 elevado a 2
+    // pow é codigo usado para fazer potencia
 
     hipotenusa= sqrt(soma);
+    //declarando que a variavel hipotenusa é igual a raiz quedrada da variavel soma
+    // sqrt é codigo usado para fazer raiz quedrada
 
-    cout<<"o resultado e \n"<< sqrt(soma);
+    cout<<"o resultado e \n"<< hipotenusa;
+    //cout vai imprimir o resultado da variavel hipotenusa
 
 
 
