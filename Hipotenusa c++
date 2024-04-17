@@ -1,0 +1,29 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main()
+{
+    cout << "Hello world!" << endl;
+    float cateto1;
+    float cateto2;
+    float hipotenusa;
+    float soma;
+
+    cout<<"digite o primeiro cateto\n"<< endl;
+    cin>>cateto1;
+
+    cout<<"digite o segundo cateto\n"<< endl;
+    cin>>cateto2;
+
+    soma= pow(cateto1, 2) + pow(cateto2, 2);
+
+    hipotenusa= sqrt(soma);
+
+    cout<<"o resultado e \n"<< sqrt(soma);
+
+
+
+
+    return 0;
+}
