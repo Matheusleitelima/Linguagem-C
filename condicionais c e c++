@@ -1,0 +1,28 @@
+Esse codigo estar em c++
+
+#include <iostream>
+#include <math.h>
+
+
+using namespace std;
+
+int main()
+{
+    int x;
+    // variavel inteiro
+    cout<<"digite x : ";
+    //cout imprimir na tela uma perguntar para usuario
+    cin>> x;
+    //cin ler o print e armazenar na variavel x
+    if(x % 2 == 0){
+    //if é uma condiçâo, nesse caso se o resto da divisao de x por 2 for igual  a 0 o numero é par
+        cout<<"é par: "<<x<<endl;
+    //cout imprimir a resposta da tela o resultado de x
+    }
+    else{
+    //else se o if não for verdadeiro
+        cout<<"é impar: "<<x<<endl;
+    //nesse caso cout vai imprimir a variavel x é impar
+    }
+    return 0;
+}
