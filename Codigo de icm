@@ -1,0 +1,67 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+
+    int idade;
+    // variavel idade
+    float altura, peso, icm;
+
+  //float tem 3 variavel, altura, peso e icm
+
+    char sexo;
+  //char, variavel de uma caracter, sexo.
+
+    string nome;
+//string e a variavel nome
+
+    cout << " Qual e seu nome: " << endl;
+//cout vai imprimir a pergunta do nome para o usuario
+
+    getline(cin, nome);
+//getline permite que a reposta do usuario tenha espaços, cin para guarda o nome na variavel nome
+
+    cout << "Qual e sua idade: " << endl;
+//cout vai perguntar a idade do usuario
+
+    cin >> idade;
+//cin vai guardar a resposta na variavel idade
+
+    if(idade < 18){
+//if é a condição, se a idade for menor que 18, vai exibir voce é de menor
+
+        cout<<"voce e de menor "<< endl;
+
+         return 0;
+//no caso do if, não é possivel usar o break, então deve usar a funçâo return se o usuario for menor que 18
+
+    }
+
+
+    else{
+//else e condição quando o if não é real, com isso vão ser exibidas essas perguntas para o usuario
+         cout<<"digite seu sexo (M = masculino e F= feminino):";
+//cout ira perguntar o sexo do usuario, se é masculino ou feminino, digitano apenas a letra inicial
+         cin>>sexo;
+//cin ira guardar a informação mna variavel sexo
+
+         cout<<"digite sua altura: "<<endl;
+//cout irá perguntar a altura do usuario
+         cin>>altura;
+//cin irá guardar a resposta na altura
+
+         cout<<"Digite seu peso: ";
+//cout irá perguntar o peso do usuario
+         cin>>peso;
+//cin irá guardar a reposta no peso
+
+         icm= peso / pow(altura, 2);
+// o icm vai ser = ao peso dividido pela altura elevado a 2
+
+         cout<<" Nome: "<< nome<<endl<< " sua idade: "<<idade<<endl<< " seu sexo : "<< sexo<<endl<< " seu icm: "<<icm <<endl;
+//cout ira mostrar os dados
+
+
+    }
