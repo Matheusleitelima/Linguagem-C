@@ -1,0 +1,70 @@
+int main()
+{
+  int n;
+//int é a variavel
+
+  n=0;
+//atribuindo valor 0 a variavel
+
+  while(n<100){
+//while codigo de reepetição, enquanto 0 for menor que 100 vai haver repetição
+
+    cout<<n<<endl;
+//cout imprimir o numero repetição na tela
+
+    n++;
+//n++ vai incrementar um numero a mais a variavel n
+  }
+
+  cout<<"rotina finalizado"<<endl;
+//quando a repetição chegar até a 99, será imprimido essa frase.
+
+ return 0;
+
+
+
+//EXEMPLO 2, REPETIÇÃO DE PALAVRAS
+
+int main()
+{
+  int cont;
+//int cont é a variavel
+  cont=0;
+//atribuindo o valor 0 a variavel
+  while(cont<100){
+//while vai fazer a reptição 100 vezes
+    cout<<"Uso do while"<<endl;
+//cout vai imprimir a mensagem na tela
+    cont++;
+//cont++ adicionar mais uma repetição
+  }
+
+  cout<<"rotina finalizado"<<endl;
+//quando a repetição chegar até a 99, será imprimido essa frase.
+
+
+ return 0;
+  }
+
+//EXEMPLO 3, USO DO BREAK
+
+ int cont;
+//variavel cont
+
+  cont=0;
+//atribuindo o valor 0 a variavel
+
+  while(cont<20){
+//while faze repetição enquanto não chegar a 20
+    cout<<"Uso do while\n"<<cont<<endl;
+//imprimir mensagem na tela
+    cont++;
+//cont++ ira adicionar mais um valor na repetição
+    if(cont == 20)
+//if vai ser se a var cont for igual 20, vai acionar o break
+        break;
+//break quebra de codigo
+    }
+  }
+
+  cout<<"rotina finalizado"<<endl;
