@@ -1,0 +1,71 @@
+#include <iostream>
+#include <math.h>
+#include <string>
+#include <limits>
+
+using namespace std;
+
+int main()
+{
+    int numero;
+    string nome;
+    string cpf;
+    numero= 1, 2;
+
+
+
+    cout<<  "- 1 seguir com o cadastro\n"
+            "- 2 sair do cadastro\n"
+            "- Digite uma  opcao: ";
+    cin>>numero;
+    //se o usuario digitar 1 será direcionado para cadastro, se digitar opção 2 será direcionado para tela final
+
+    switch(numero){
+    //switch usado para repetir um numero de casos de uma determinada variavel
+
+    case 1:
+    //caso o usuarrio digitar 1 será exibida essa linha de codigo
+
+        cout<<"Digite seu nome:  ";
+    //cout ira imprimir a pergunta para o usuario
+
+        getline(cin>>ws, nome);
+        //getline receber a resposta do nome com espaço e guardar na variavel nome
+
+      while(true){
+    //while ira fazer a repetição desse bloco de codigo caso cpf for invalido
+
+          cout<<"digite seu cpf: ";
+          //cout ira imrpimir a pergunta do cpf
+           cin>> cpf;
+           //cin ira guardar a resposta na variavel cpf
+
+            if(cpf.length() == 7){
+            //if ira verificar se o numero de caracter e correto com a função lenght()==7
+                cout<<"Cadastro concluido";
+            //se a condição for certa
+                break;
+        }else{
+        //caso tamanho não for 7 será exibido isso
+            cout<<"digite seu cpf de maneira valida: ";
+
+                cin.ignore();
+                //limpar o que estar guardado na variavel cpf
+
+            }
+      }
+
+    case 2:
+    //caso usuario digitar a segunda opção
+        cout<<"obrigado por nos visitar, volte sempre.";
+        break;
+
+
+
+
+    }
+
+
+
+       return 0;
+}
