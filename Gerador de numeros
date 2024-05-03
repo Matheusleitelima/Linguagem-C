@@ -1,0 +1,48 @@
+#include <iostream>
+#include <random>
+
+using namespace std;
+
+int main()
+{
+    int numero;
+
+    random_device rd;
+    //cria um gerador de numeros aleatorios
+
+    uniform_int_distribution<int> dist(1, 50);
+    //distribuir um numero de forma uniforme de 1 a 10
+
+    int numero_aleatorio= dist(rd);
+    //gerar e imprimir o numero aleatorio
+
+
+    while(true){
+
+
+
+         cout<<"digite um numero: "<<endl;
+    cin>>numero;
+
+
+
+
+        if(numero == numero_aleatorio){
+            cout<<"voce acertou"<< numero_aleatorio<<"!"<<endl;
+            break;
+
+        }
+
+        if(numero > numero_aleatorio){
+            cout<<"O numero e menor, ";
+            cin.ignore();
+
+        }
+
+        if(numero < numero_aleatorio ){
+            cout<<"O numero e maior, ";
+            cin.ignore();
+        }
+    }
+    return 0;
+    }
