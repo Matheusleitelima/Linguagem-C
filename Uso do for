@@ -1,0 +1,56 @@
+#include <iostream>
+#include <math.h>
+#include <string>
+#include <limits>
+#include <vector>
+
+using namespace std;
+
+int main()
+{
+    int num;
+//variavel tipo inteiro
+    int contador;
+//variavel contador tipo inteiro
+
+    for(contador=1;contador<=100;contador++){
+//for laço de repetição(variavel geralmente 1 ou 0; condição quando for menor ou igual a 100; incremmentar mais um quando a condição é verdadeira)
+        cout<<contador<<endl;
+//cout vai imrprimir a repetição
+    }
+
+
+       return 0;
+//codigo funcionou retorna 0
+
+                                                                    ATIVIDADE DE FOR
+
+
+                            // crie um programa que peça ao usuario para entrar com 4 notas de um aluno e
+                               //calcule sua media aritmetica, e retorne o valor dessa media calculada
+
+
+    int cont;
+    //viariavel contadora
+    float nota, media, total;
+    //tres variavel tipo float
+    total= 0;
+    //variavel total é 0 por que aluno começa sem nota
+
+    for(cont=1; cont<=4; cont++)
+      //precisa capturar a nota quatro vezes de 1 a 4 incrementando mais um.
+        {
+        cout<<"Digite sua nota: ";
+    //imprimir a pergunta da nota
+        cin>> nota;
+    //armezenar na variavel nota
+        total= total + nota;
+    //total= total(0) +  a nota digitada
+    }
+
+    media= total / 4;
+    //medoa da nota dividida por 4
+    cout<<"Sua media "<<media;
+    //imprimir a media
+
+    return 0;
