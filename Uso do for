@@ -60,25 +60,53 @@ int main()
 
 
 LAÇO FOR ENCADEADO
+//irá fazer o codigo rodar mais vezes.
 
 int cont;
+//variavel contador tipo inteiro
+
 char cod;
+//variavel char que irá receber uma letra
+
 float nota, media, total;
+//variavel float que vai ter nota media e total.
+
 total=0;
+//total é igual á 0, pois o aluno começa sem nota
 cod='C';
+//e variavel caracter recene c
 
 while(cod !='F'){
+//while é a repetição, caso for diferente de c irá repetir o codigo novamente.
+
     for(cont = 1; cont<=4; cont++){
+//for repetição, contador começa em 1 e bai até 4 e incrementa mais um.
+
         cout<<"Digite a nota: ";
+//cout vai imprimir a pergunta 4x na tela.
         cin>>nota;
+//armazenar dentro da variavel nota.
+
         total= total + nota;
+//total= total que é 0 somado com a nota que o aluno digitou.
     }
+
     media=total / 4;
+//media= total divido por 4
+
     cout<<"Sua media e: "<<media<<endl;
+//cout irá imprimir a media.
+
     total=0;
+//retornar o valor de total a 0
     nota=0;
+//retornar o valor de nota a 0
     cout<<"Deseja calcular a media de mais algum aluno,Pressione qualquer tecla para prosseguir Se nao digite F para finalizar.";
+//irá perguntar se deseja calcular de outro aluno, se não digitar f para finalizar o programa.
+
     cin>>cod;
+//retorna a informação para od
+
 }
 
     return 0;
