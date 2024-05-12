@@ -65,3 +65,75 @@ int main()
 
 
     }
+
+
+
+//codigo icm usando o while e for.
+
+
+  int cont, idade;
+
+    float altura, peso, icm;
+
+    char sexo, cod;
+
+    string nome;
+
+    cod= 'C';
+    idade= 0;
+    altura= 0;
+    peso= 0;
+    icm= 0;
+    nome= 'usuario';
+    sexo= 'n';
+
+    while(cod != 'F'){
+        for(cont =1; cont<=4; cont++){
+            cout<<"digite seu nome: ";
+            getline(cin>>ws, nome);
+
+            cout<<"Sua idade: ";
+            cin>>idade;
+
+            if(idade< 18){
+                cout<<"voce e de menor"<<endl;
+                 return 0;
+            }else{
+                cout<<"digite seu sexo (m= masculino e f= feminino): ";
+                cin>>sexo;
+
+                cout<<"digite sua altura: ";
+                cin>>altura;
+
+                 cout<<"digite seu peso: ";
+                cin>>peso;
+
+                    icm= peso/ pow(altura, 2);
+        cout<<"nome: "<<nome<<endl<<"Idade: "<<idade<<endl<<"Seu sexo: "<<sexo<<endl<<"Seu icm: "<<icm<<endl;
+
+
+        cout<<"Deseja calcular denovo aperte qualquer tecla, se nao digite F: ";
+        cin>>cod;
+
+        if(cod=='F'){
+            break;
+        }
+
+
+        idade= 0;
+        altura= 0;
+        icm= 0;
+        peso= 0;
+        nome= 'usuario';
+        sexo= 'n';
+
+            }
+        }
+
+    }
+
+
+
+
+    return 0;
+
