@@ -68,16 +68,19 @@ int main()
 
 
 
-//codigo icm usando o while e for.
+CODIGO ICM USANDO WHILE E FOR
 
-
-  int cont, idade;
+    int cont, idade;
+//variavel cont e idade inteiro.
 
     float altura, peso, icm;
+//variavel do tipo float, para altura, peso e icm.
 
     char sexo, cod;
+//variavel tipo char, para cod e sexo;
 
     string nome;
+//variavel tipo string, para nome;
 
     cod= 'C';
     idade= 0;
@@ -96,7 +99,9 @@ int main()
             cin>>idade;
 
             if(idade< 18){
-                cout<<"voce e de menor"<<endl;
+
+                setlocale(LC_ALL, "portuguese");
+                cout<<"voce é de menor"<<endl;
                  return 0;
             }else{
                 cout<<"digite seu sexo (m= masculino e f= feminino): ";
@@ -112,7 +117,7 @@ int main()
         cout<<"nome: "<<nome<<endl<<"Idade: "<<idade<<endl<<"Seu sexo: "<<sexo<<endl<<"Seu icm: "<<icm<<endl;
 
 
-        cout<<"Deseja calcular denovo aperte qualquer tecla, se nao digite F: ";
+        cout<<"Deseja calcular denovo? aperte qualquer tecla, se não digite F: ";
         cin>>cod;
 
         if(cod=='F'){
