@@ -83,47 +83,94 @@ CODIGO ICM USANDO WHILE E FOR
 //variavel tipo string, para nome;
 
     cod= 'C';
+//cod tem o valor do caracter C
+
     idade= 0;
+//idade tem o valor de 0
+
     altura= 0;
+//altura tem o valor 0
+
     peso= 0;
+//peso tem o valor 0
+
     icm= 0;
+//icm tem o valor 0
+
     nome= 'usuario';
+//nome tem o valor de usuario
+
     sexo= 'n';
+//sexo tem o valor de n
 
     while(cod != 'F'){
+//repetição while, e executar esse codigo se for diferente de F.
+
         for(cont =1; cont<=4; cont++){
+//for repetição, contador começa em 1 e faz a pergunta até 4 vezes, incrementando mais um.
+
             cout<<"digite seu nome: ";
+//Imprimir a pergunta do nome na tela.
+
             getline(cin>>ws, nome);
+//armazenar o nome com espaços da variavel nome
 
             cout<<"Sua idade: ";
+//imprimir a pergunta idade.
+
             cin>>idade;
+//armazenar a perguntar na variavel idade.
 
             if(idade< 18){
+//condição para idade, se for menor que 18.
 
                 setlocale(LC_ALL, "portuguese");
+//Para digitar palavras com acento da lingua portuguesa
+
                 cout<<"voce é de menor"<<endl;
+//se a condição for verdadeira irá exibir.
+
                  return 0;
             }else{
+// se o if não for verdadeiro
+
                 cout<<"digite seu sexo (m= masculino e f= feminino): ";
+//imprimir a pergunta do sexo.
+
                 cin>>sexo;
+//armazenar não da variavel sexo.
 
                 cout<<"digite sua altura: ";
+//imprimir a pergunta da altura
+
                 cin>>altura;
+//armazenar na variavel altura
 
                  cout<<"digite seu peso: ";
+//imprimir a perguntar peso
+
                 cin>>peso;
+//armazenar na variavel peso
 
                     icm= peso/ pow(altura, 2);
+//calculo do icm é igual peso dividido por altura elevado a 2, o pow representa a pontencia
+
         cout<<"nome: "<<nome<<endl<<"Idade: "<<idade<<endl<<"Seu sexo: "<<sexo<<endl<<"Seu icm: "<<icm<<endl;
+//exibir as informações
 
 
         cout<<"Deseja calcular denovo? aperte qualquer tecla, se não digite F: ";
+//imprimir as perguntas na tela
+
         cin>>cod;
+//armazenar na variavel cod
 
         if(cod=='F'){
+//se cod for igual a F será exibido o break
             break;
         }
 
+//caso não for digitado F, todos os valores retornaram a 0.
 
         idade= 0;
         altura= 0;
