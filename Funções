@@ -1,0 +1,21 @@
+void escrevaNome();
+//Declarar a função 
+
+int main()
+//int main é a função principal
+{
+setlocale(LC_ALL, "");
+//adptar para o idioma local
+
+escrevaNome();
+//chamar a função dentro da main
+
+return 0;
+}
+
+void escrevaNome(){
+//criar a função
+
+cout<<"Olá, bem vindo ao meu programa.";
+//exibir a mensagem da função
+}
