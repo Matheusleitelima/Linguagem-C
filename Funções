@@ -19,3 +19,75 @@ void escrevaNome(){
 cout<<"Olá, bem vindo ao meu programa.";
 //exibir a mensagem da função
 }
+
+
+
+//ESCOPO DE VARIAVEIS(VARIAVEL LOCAL E GLOBAL)
+VARIAVEL LOCAL= FUNCIONA APENAS PARA AQUELA FUNÇÃO.
+VARIAVEL GLOBAL= FUNCIONA PARA TODOS AS FUNÇÕES.
+
+
+USANDO INT NUMERO = 15 COMO VARIAVEL GLOBAL.
+
+
+int numero = 15;
+//variavel global.
+
+void escrevaValor();
+//declarei a função escreveValor.
+
+int main()
+{
+    setlocale(LC_ALL, "");
+    //adptar para o idioma local
+    
+    cout<<"O numero é \n"<<numero<<endl;
+    //imprimir a mensagem na tela 
+    
+    escrevaValor();
+    //chamar a variavel escrevaValor.
+
+return 0;
+}
+
+void escrevaValor(){
+    //criando  a função escrevaValor.
+    int dobro = numero * 2;
+    //variavel local , dobro é igual o numero inteiro da variavel global vezes 2.
+    
+    cout<<"E o dobro é \n"<<dobro;
+    //imprimir o valor do dobro.
+
+
+
+USANDO INT NUMERO = 15 COMO VARIAVEL LOCAL
+
+
+void escrevaValor();
+//declarei a função escreveValor.
+
+int main()
+{
+    setlocale(LC_ALL, "");
+    //adptar para o idioma local
+
+    //cout<<"O numero é \n"<<numero<<endl;
+    //imprimir a mensagem na tela
+
+    escrevaValor();
+    //chamar a variavel escrevaValor.
+
+return 0;
+}
+
+void escrevaValor(){
+    //criando  a função escrevaValor.
+
+    int numero = 15;
+    //variavel local.
+    int dobro = numero * 2;
+    //variavel local , dobro é igual o numero inteiro da variavel local vezes 2.
+
+    cout<<"E o dobro é "<<dobro;
+    //imprimir o valor do dobro.
+}
