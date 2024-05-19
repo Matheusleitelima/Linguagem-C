@@ -1,0 +1,81 @@
+float soma, divisao, multiplicacao, subtracao;
+float  numero, resultado, num1, num2;
+int opcao;
+
+
+int main()
+{
+
+
+    setlocale(LC_ALL, "");
+
+    cout<<"Bem vindo ao nosso sistema de calculadora.\n";
+    cout<<"Digite as seguinte opções\n";
+    cout<<"1 multiplicação \n";
+    cout<<"2 adição \n";
+    cout<<"3 subtração \n";
+    cout<<"4 divisão\n";
+    cout<<"Escolha uma das opções: ";
+    cin>>opcao;
+
+
+    switch(opcao){
+
+    case 1:
+        cout<<"Digite o primeiro numero: ";
+        cin>>num1;
+
+        cout<<"Digite o segundo numero: ";
+        cin>>num2;
+
+        resultado = num1 * num2;
+
+        cout<<"O resultado: "<<resultado;
+
+        break;
+
+    case 2:
+        cout<<"Digite o primeiro numero: ";
+        cin>> num1;
+
+        cout<<"Digite o segundo numero: ";
+        cin>>num2;
+
+        resultado= num1 + num2;
+
+        cout<<"O resultado: "<<resultado;
+
+        break;
+
+
+
+    case 3:
+        cout<<"Digite o primeiro numero: ";
+        cin>>num1;
+
+        cout<<"Digite o segundo numero: ";
+        cin>>num2;
+
+    resultado = num1 - num2;
+
+    cout<<"O resultado : "<<resultado;
+    break;
+
+    case 4:
+        cout<<"Digite o primeiro numero: ";
+        cin>>num1;
+
+        cout<<"Digite o segundo numero: ";
+        cin>>num2;
+
+        resultado = num1 / num2;
+
+        cout<<"O resultado: "<<resultado;
+
+        break;
+
+    }
+
+    return 0;
+
+}
