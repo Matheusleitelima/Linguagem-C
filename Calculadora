@@ -79,3 +79,103 @@ int main()
     return 0;
 
 }
+
+
+
+USANDO WHILE E CASE
+
+float soma, divisao, multiplicacao, subtracao;
+float  numero, resultado, num1, num2;
+int opcao;
+int Varloop = 1;
+
+int main()
+{
+
+
+    setlocale(LC_ALL, "");
+    system("cls");
+
+    while(Varloop == 1){
+
+        cout<<"BEM VINDO A NOSSA CALCULADORA   \n";
+        cout<<"1 - MULTIPLICAÇÃO\n";
+        cout<<"2 - ADIÇÃO\n";
+        cout<<"3 - DIVISÃO\n";
+        cout<<"4 - SUBTRAÇÃO\n";
+        cout<<"5 - ENCERRAR A CALCULADORA\n";
+        cout<<" DIGITE UMA OPÇÃO : ";
+        cin>>opcao;
+
+        switch(opcao){
+        case 1:
+            cout<<"DIGITE O PRIMEIRO NUMERO : ";
+            cin>>num1;
+            cout<<"DIGITE O SEGUNDO NUMERO : ";
+            cin>>num2;
+
+
+            resultado = num1 * num2;
+
+            cout<<"O resultado:\n "<< resultado;
+            break;
+
+
+        case 2:
+            cout<<"DIGITE O PRIMEIRO NUMERO: ";
+            cin>>num1;
+            cout<<"DIGITE O SEGUNDO NUMERO: ";
+            cin>>num2;
+
+            resultado = num1 + num2;
+            cout<<"O resultado: "<<resultado;
+
+            break;
+
+        case 3:
+            cout<<"DIGITE O PRIMEIRO NUMERO: ";
+            cin>>num1;
+            cout<<"DIGITE O SEGUNDO NUMERO: ";
+            cin>>num2;
+
+            resultado=  num1 / num2;
+
+            cout<<"O resultado: "<<resultado;
+
+            break;
+
+
+        case 4:
+            cout<<"DIGITE O PRIMEIRO NUMERO: ";
+            cin>>num1;
+            cout<<"DIGITE O SEGUNDO NUMERO: ";
+            cin>>num2;
+
+            resultado = num1 - num2;
+
+            cout<<"O resultado: "<<resultado;
+
+            break;
+
+
+        case 5:
+            Varloop= 0;
+            resultado = 0;
+            cout<<"Calculadora será encerrada \n";
+
+            break;
+            default:
+            resultado = 0;
+
+            cout<<"Nenhuma opção foi selecionada";
+
+
+
+        }
+        cout<<"\n PRESSIONE ENTER PARA CONTINUAR \n";
+        getchar();
+    }
+ return 0;
+
+
+}
