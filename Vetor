@@ -1,0 +1,38 @@
+int main()
+{
+//float notas [4]= {7.5,7.8, 7.4,7.7};
+//vetor de tipo float, contendo 4 notas e dentro das {} as notas.
+
+//int i;
+//contador do tipo int i, que a posição da contagem.
+
+//for(i = 0 ; i<4; i++){
+// laço for, a posição começa em 0 e vai até 4, incrementando mais um.
+
+    //cout<<"A nota "<< i+1 <<" = " <<notas[i]<<endl;
+//imprimir as notas, a cada notar vai ser contando i + 1 para representar a contagem da nota, e notas[1] para acessar o vetor das notas
+
+
+ float notas [4];
+ int i;
+
+ for(i=0; i<4; i++){
+
+    cout<<"Digites as notas: ";
+    cin>>notas[i];
+
+    if(notas[i] > 10){
+        cout<<"Nota invalida"<<endl;
+        notas[i]=0;
+    }
+ }
+
+ for(i=0; i<4; i++){
+    cout<<"A nota "<<i+1<<" = "<< notas[i]<<endl;
+
+ }
+
+
+
+
+ return 0;
