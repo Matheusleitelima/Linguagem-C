@@ -36,3 +36,46 @@ int main()
 
 
  return 0;
+
+
+//O exemplo a seguir gera todos os elementos de um array, usando um " loop for-each ":
+
+
+
+
+int numeros[5]={1, 2, 3, 4 , 5};
+int main()
+{
+
+ for (int i : numeros){
+    cout<<i<<endl;
+ }
+ return 0;
+
+
+}
+
+
+
+Omitir elementos na declaração
+Também é possível declarar um array sem especificar os elementos na declaração e adicioná-los posteriormente
+
+string cars[5];
+int main()
+{
+
+ cars[0]= "volvo";
+ cars[1]= "bmw";
+ cars[2]= "camaro";
+ cars[3]= "porche";
+ cars[4]= "lamborguini";
+
+ for(int i = 0; i < 5; i++ ){
+    cout<<cars[i]<<endl;
+ }
+
+ return 0;
+}
+
+
+
