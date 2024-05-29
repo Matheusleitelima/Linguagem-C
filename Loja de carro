@@ -1,0 +1,208 @@
+#include <iostream>
+#include <math.h>
+#include <string>
+#include <limits>
+#include <vector>
+#include <cmath>
+#include <locale.h>
+#include <stdlib.h>
+#include <iomanip>
+using namespace std;
+
+string cars[5];
+
+ int opc, opccomprar;
+ long double saldo, gasto, valor;
+ char cod;
+
+
+
+int main()
+{
+ setlocale(LC_ALL, "");
+
+ cout<<"\n Bem vindo a nossa loja de carro!"<<endl;
+ cout<<"Antes de iniciar qual o seu saldo disponivel: ";
+ cin>>saldo;
+
+string cars[5];
+
+ cars[0]= "volvo\n";
+ cars[1]= "bmw\n";
+ cars[2]= "camaro\n";
+ cars[3]= "porche\n";
+ cars[4]= "lamborguini\n";
+
+  char cod;
+ cod= 'C';
+
+  int garagem [5];
+
+
+ while(cod != 'F'){
+
+    cout<<"1-"<<cars[0];
+    cout<<"2-"<<cars[1];
+    cout<<"3-"<<cars[2];
+    cout<<"4-"<<cars[3];
+    cout<<"5-"<<cars[4];
+
+
+ cout<<"Digite o carro que deseja consultar: ";
+ cin>> opc;
+
+
+ switch(opc){
+
+ case 1:
+
+     cout<<cars[0];
+     cout<<"Valor: 419.950\n";
+     valor = 419.950;
+
+    cout<<"1- Comprar\n";
+    cout<<"2- voltar\n";
+    cout<<"Digite a opção: ";
+    cin>>opccomprar;
+
+    while(opccomprar =1){
+        if(saldo < valor){
+            cout<<"Saldo insuficiente\n";
+            break;
+        }else{
+            gasto= saldo - valor;
+            cout<<"Veiculo comprando com sucesso!\n";
+            cout<<fixed<< setprecision(0)<<"Saldo restante: "<<gasto<<endl;
+            break;
+
+            saldo = gasto;
+
+        }
+    }
+        break;
+
+ case 2:
+
+        saldo = gasto;
+
+       cout<<cars[1];
+     cout<<"Valor: 299.950\n";
+     valor =299.950;
+
+    cout<<"1- Comprar\n";
+    cout<<"2- voltar\n";
+    cout<<"Digite a opção: ";
+    cin>>opccomprar;
+
+    while(opccomprar =1){
+        if(saldo < valor){
+            cout<<"Saldo insuficiente\n";
+            break;
+        }else{
+            gasto= saldo - valor;
+            cout<<"Veiculo comprando com sucesso!\n";
+            cout<<fixed<< setprecision(0)<<"Saldo restante: "<<gasto<<endl;
+
+            break;
+        }
+ }
+      break;
+
+
+ case 3:
+      saldo = gasto;
+
+       cout<<cars[2];
+     cout<<"Valor: 532.340\n";
+     valor =532.340;
+
+    cout<<"1- Comprar\n";
+    cout<<"2- voltar\n";
+    cout<<"Digite a opção: ";
+    cin>>opccomprar;
+
+    while(opccomprar =1){
+        if(saldo < valor){
+            cout<<"Saldo insuficiente\n";
+            break;
+        }else{
+            gasto= saldo - valor;
+            cout<<"Veiculo comprando com sucesso!\n";
+            cout<<fixed<< setprecision(0)<<"Saldo restante: "<<gasto<<endl;
+
+            break;
+        }
+
+    }
+
+case 4:
+
+       saldo = gasto;
+
+       cout<<cars[3];
+     cout<<"Valor: 490.000\n";
+     valor =490.000;
+
+    cout<<"1- Comprar\n";
+    cout<<"2- voltar\n";
+    cout<<"Digite a opção: ";
+    cin>>opccomprar;
+
+    while(opccomprar =1){
+        if(saldo < valor){
+            cout<<"Saldo insuficiente\n";
+            break;
+        }else{
+            gasto= saldo - valor;
+            cout<<"Veiculo comprando com sucesso!\n";
+            cout<<fixed<< setprecision(0)<<"Saldo restante: "<<gasto<<endl;
+
+            break;
+        }
+
+    }
+
+case 5:
+      saldo = gasto;
+
+       cout<<cars[4];
+     cout<<"Valor: 490.000\n";
+     valor = 490.000;
+
+    cout<<"1- Comprar\n";
+    cout<<"2- voltar\n";
+    cout<<"Digite a opção: ";
+    cin>>opccomprar;
+
+    while(opccomprar =1){
+        if(saldo < valor){
+            cout<<"Saldo insuficiente\n";
+            break;
+        }else{
+            gasto= saldo - valor;
+            cout<<"Veiculo comprando com sucesso!\n";
+            cout<<fixed<< setprecision(0)<<"Saldo restante: "<<gasto<<endl;
+
+            break;
+        }
+
+    }
+
+
+}
+ cout<<"Se deseja retornar ao menu digite qualquer tecla, se não digite F: ";
+    cin>>cod;
+
+    if(cod == 'F'){
+            cout<<"Volte sempre! \n";
+        break;
+    }
+
+    opc= 0;
+    opccomprar= 0;
+    saldo = gasto;
+}
+
+ return 0;
+
+}
