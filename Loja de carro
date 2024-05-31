@@ -33,10 +33,8 @@ string cars[5];
  cars[3]= "porche\n";
  cars[4]= "lamborguini\n";
 
-  char cod;
- cod= 'C';
-
-  int garagem [5];
+    char cod;
+    cod= 'C';
 
 
  while(cod != 'F'){
@@ -102,8 +100,8 @@ string cars[5];
             gasto= saldo - valor;
             cout<<"Veiculo comprando com sucesso!\n";
             cout<<fixed<< setprecision(0)<<"Saldo restante: "<<gasto<<endl;
+                  break;
 
-            break;
         }
  }
       break;
@@ -129,11 +127,12 @@ string cars[5];
             gasto= saldo - valor;
             cout<<"Veiculo comprando com sucesso!\n";
             cout<<fixed<< setprecision(0)<<"Saldo restante: "<<gasto<<endl;
-
-            break;
+                  break;
         }
-
     }
+
+                        break;
+
 
 case 4:
 
@@ -159,13 +158,13 @@ case 4:
 
             break;
         }
-
     }
+    break;
 
 case 5:
       saldo = gasto;
 
-       cout<<cars[4];
+        cout<<cars[4];
      cout<<"Valor: 490.000\n";
      valor = 490.000;
 
@@ -182,11 +181,14 @@ case 5:
             gasto= saldo - valor;
             cout<<"Veiculo comprando com sucesso!\n";
             cout<<fixed<< setprecision(0)<<"Saldo restante: "<<gasto<<endl;
+                  break;
 
-            break;
         }
-
     }
+        break;
+
+default:
+    cout<<"Escolha a opção que seja valida!\n";
 
 
 }
@@ -206,3 +208,4 @@ case 5:
  return 0;
 
 }
+
