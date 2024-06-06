@@ -63,7 +63,11 @@ string cars[5];
     cout<<"Digite a opção: ";
     cin>>opccomprar;
 
-    while(opccomprar =1){
+    if(opccomprar == 2){
+        break;
+    }
+
+    while(opccomprar ==1){
         if(saldo < valor){
             cout<<"Saldo insuficiente\n";
             break;
@@ -91,8 +95,11 @@ string cars[5];
     cout<<"2- voltar\n";
     cout<<"Digite a opção: ";
     cin>>opccomprar;
+    if(opccomprar ==2){
+        break;
+    }
 
-    while(opccomprar =1){
+    while(opccomprar ==1){
         if(saldo < valor){
             cout<<"Saldo insuficiente\n";
             break;
@@ -119,7 +126,11 @@ string cars[5];
     cout<<"Digite a opção: ";
     cin>>opccomprar;
 
-    while(opccomprar =1){
+    if(opccomprar == 2){
+        break;
+    }
+
+    while(opccomprar ==1){
         if(saldo < valor){
             cout<<"Saldo insuficiente\n";
             break;
@@ -146,8 +157,11 @@ case 4:
     cout<<"2- voltar\n";
     cout<<"Digite a opção: ";
     cin>>opccomprar;
+    if(opccomprar == 2){
+        break;
+    }
 
-    while(opccomprar =1){
+    while(opccomprar ==1){
         if(saldo < valor){
             cout<<"Saldo insuficiente\n";
             break;
@@ -172,8 +186,11 @@ case 5:
     cout<<"2- voltar\n";
     cout<<"Digite a opção: ";
     cin>>opccomprar;
+    if(opccomprar == 2){
+        break;
+    }
 
-    while(opccomprar =1){
+    while(opccomprar ==1){
         if(saldo < valor){
             cout<<"Saldo insuficiente\n";
             break;
@@ -208,4 +225,5 @@ default:
  return 0;
 
 }
+
 
