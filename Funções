@@ -40,3 +40,31 @@ int main()
 
     return 0;
 }
+
+
+EXEMPLO 1:
+#include <iostream>
+
+using namespace std;
+
+
+void minhafuncao( string nome){
+//Função chamada de minha função, que vai receber como parametro um nome do tipo string.
+    cout<<nome<<endl;
+    cout<<"Olá";
+}
+
+string nome;
+
+int main()
+{
+    setlocale(LC_ALL,"");
+
+    cout<<"Digite seu nome: ";
+    cin>> nome;
+
+    minhafuncao(nome);
+
+
+    return 0;
+}
