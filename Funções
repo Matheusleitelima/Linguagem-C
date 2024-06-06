@@ -13,3 +13,30 @@ void EsccrevaNome(){
 cout<<"Escreva seu nome";
 
 }
+
+
+//PARAMETROS E ARGUMENTOS 
+
+void minhafuncao( string nome){
+//Função chamada de minha função, que vai receber como parametro um nome do tipo string.
+    cout<<nome<<endl;
+}
+
+int main()
+{
+    minhafuncao("matheus");
+    //chamando a função e adicionando o nome.
+    
+    minhafuncao("kelly");
+    //chamando a função e adicionando o nome.
+
+    minhafuncao("thiago");
+    //chamando a função e adicionando o nome.
+    
+    //Nome entre "" São argumentos.
+
+
+
+
+    return 0;
+}
