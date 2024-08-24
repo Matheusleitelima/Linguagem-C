@@ -1,0 +1,143 @@
+01. Imprimir de 1 a 100; v
+
+    int contador;
+    for(contador=1; contador<=100; contador++){
+        printf("%d \n", contador);
+    }
+
+02. Faça um programa em C que leia o destino do passageiro, se a viagem inclui retorno
+(ida e volta) e informe o preço da passagem conforme a tabela a seguir.
+
+CODIGO:
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+
+
+int main()
+{
+
+
+    setlocale(LC_ALL, "");
+    char cod = 'c';
+    int opcmenu;
+    int opcnorte;
+    int opcnordeste;
+    int opccentrooeste;
+    int opcsul;
+
+ while(cod != 'f'){
+    printf("1 - NORTE\n");
+    printf("2 - NORDESTE\n");
+    printf("3 - CENTRO OESTE\n");
+    printf("4 - SUL \n");
+
+    printf("Escolha uma opção: ");
+    scanf("%d", &opcmenu);
+
+    switch (opcmenu){
+    case 1:
+
+        printf("PREÇO DE IDA = R$500\n");
+        printf("PREÇO DE IDA E VOLTA = R$900\n");
+
+        printf("1  - DESEJA COMPRAR IDA\n");
+        printf("2 - DESEJA COMPRAR IDA E VOLTA\n");
+        printf("Digite a opção: ");
+        scanf("%d", &opcnorte);
+
+        if (opcnorte == 1){
+            printf("Passagem de ida comprada com sucesso!\n");
+            break;
+        }else if(opcnorte == 2){
+            printf("Passagem de ida e volta comprada com sucesso!\n");
+            break;
+        }else{
+            printf("Invalido\n");
+        }
+        break; //break case 1
+
+    case 2:
+
+        printf("PREÇO DE IDA = R$350\n");
+        printf("PREÇO DE IDA E VOLTA = R$650\n");
+
+        printf("1  - DESEJA COMPRAR IDA\n");
+        printf("2 - DESEJA COMPRAR IDA E VOLTA\n");
+        printf("Digite a opção: ");
+        scanf("%d", &opcnordeste);
+
+        if (opcnordeste == 1){
+            printf("Passagem de ida comprada com sucesso! \n");
+        }else if(opcnordeste == 2){
+            printf("Passagem de ida e volta comprada com sucesso\n!");
+        }else{
+            printf("Invalid\n");
+        }
+        break;//break case 2
+
+    case 3:
+
+
+        printf("PREÇO DE IDA = R$350\n");
+        printf("PREÇO DE IDA E VOLTA = R$600\n");
+
+        printf("1  - DESEJA COMPRAR IDA\n");
+        printf("2 - DESEJA COMPRAR IDA E VOLTA\n");
+        printf("Digite a opção: ");
+        scanf("%d", &opccentrooeste);
+
+        if (opccentrooeste == 1){
+            printf("Passagem de ida comprada com sucesso! \n");
+        }else if(opccentrooeste == 2){
+            printf("Passagem de ida e volta comprada com sucesso\n!");
+        }else{
+            printf("Invalido\n");
+        }
+        break;//break case 3
+
+    case 4:
+
+        printf("PREÇO DE IDA = R$300\n");
+        printf("PREÇO DE IDA E VOLTA = R$550\n");
+
+        printf("1  - DESEJA COMPRAR IDA\n");
+        printf("2 - DESEJA COMPRAR IDA E VOLTA\n");
+        printf("Digite a opção: ");
+        scanf("%d", &opcsul);
+
+        if (opcsul == 1){
+            printf("Passagem de ida comprada com sucesso! \n");
+        }else if(opcsul == 2){
+            printf("Passagem de ida e volta comprada com sucesso\n!");
+        }else{
+            printf("Invalido\n");
+        }
+        break;//break case 4
+
+    default:
+        printf("Invalido\n");
+        break;
+
+    }//switch
+      printf("Se deseja retornar ao menu digite qualquer tecla, se não digite F: ");
+        scanf(" %c", &cod);
+
+        if (cod == 'f') {
+            break;
+        }
+ }//while
+
+    return 0;
+}
+
+
+
+03. Faça um programa em C que permita entrar com o nome, a idade e o sexo de 20
+pessoas. O programa deve imprimir o nome da pessoa se ela for do sexo masculino
+e tiver mais de 21 anos.
+
+04. Num frigorífico existem 90 bois. Cada boi traz preso em seu pescoço um cartão contendo
+seu número de identificação e seu peso. Faça um programa que imprima a identificação
+e o peso do boi mais gordo e do boi mais magro (supondo que não haja empates).
